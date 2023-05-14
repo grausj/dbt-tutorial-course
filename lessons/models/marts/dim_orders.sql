@@ -16,6 +16,7 @@ select
 	-- Dimensions from our staging orders table
 	od.order_id,
 	od.created_at,
+	{{ is_weekend('od.created_at') }},
 	od.shipped_at,
 	od.delivered_at,
 	od.returned_at,
