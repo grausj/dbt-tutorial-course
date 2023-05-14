@@ -13,7 +13,7 @@ sum(item_discount) as total_discount
 )
 
 select
-	-- Diemnsions from our staging orders table
+	-- Dimensions from our staging orders table
 	od.order_id,
 	od.created_at,
 	od.shipped_at,

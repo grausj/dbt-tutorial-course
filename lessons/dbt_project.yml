@@ -35,7 +35,7 @@ models:
   lessons:
     +materialized: table
     +persist_docs:
-      relations: true
+      relation: true
       columns: true
     # Table deletes 168 hours after creation
     +hours_to_expiration: 168
