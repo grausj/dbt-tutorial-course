@@ -37,3 +37,12 @@ models:
     +persist_docs:
       relations: true
       columns: true
+    # Table deletes 168 hours after creation
+    +hours_to_expiration: 168
+
+tests:
+  lessons:
+    +severity: warn
+    marts:
+      +severity: error
+
